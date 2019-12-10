@@ -10,7 +10,18 @@ The parameter of accum is a string which includes only letters from a..z and A..
 */
 
 function accum(s) {
-    
+    //given string
+    //split string into array
+    //loop through array
+        //multiply by place in array + "-" and push to new array
+    //join new array into string
+    //return string
+    const sArray = s.split('');
+    const newSArray = [];
+    for (let i = 0; i < sArray.length; i++) {
+        newSArray.push(sArray[i].toUpperCase() + sArray[i].repeat(i));
+    };
+    return newSArray.join('-');
 }
 
 console.log(accum("abcd"));
