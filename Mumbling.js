@@ -17,8 +17,8 @@ function accum(s) {
     // };
     // return newSArray.join('-');
 
-    // Refactored
-    return s.split('').map((letter, i) => 
+    // refactored
+    return s.split('').map((letter, i) =>
         letter.toUpperCase() + letter.toLowerCase().repeat(i)
     ).join('-');
 }
